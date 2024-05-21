@@ -19,7 +19,7 @@ Este es un sencillo gestor de tareas web que permite a los usuarios añadir, com
 
 ## Captura de Pantalla
 
-![Gestor de Tareas](screenshot.png)
+![Gestor de Tareas]
 
 ## Cómo Usar
 
