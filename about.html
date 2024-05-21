@@ -1,40 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Task Manager</title>
+<title>Gestor de Tareas</title>
 <style>
   body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
   #taskInput {
     margin-bottom: 10px;
     width: 300px;
   }
   .taskItem {
+    display: flex;
+    align-items: center;
     margin-bottom: 5px;
   }
   .complete {
     text-decoration: line-through;
   }
+  .taskContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .taskSection {
+    flex: 1;
+    margin: 0 20px;
+    background-color: #e0f7fa; /* Azul claro */
+    border: 1px solid #b2ebf2;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .taskSection h2 {
+    text-align: center;
+    color: #00796b; /* Azul más oscuro para el encabezado */
+  }
 </style>
 </head>
 <body>
 
-<h1>Task Manager</h1>
+<h1>Gestor de Tareas</h1>
 
-<input type="text" id="taskInput" placeholder="Add new task">
-<button onclick="addTask()">Add Task</button>
-
-<h2>Tasks</h2>
-<div id="taskList">
-  <!-- Tasks will be added here -->
+<div>
+  <input type="text" id="taskInput" placeholder="Añadir nueva tarea">
+  <button onclick="addTask()">Añadir Tarea</button>
 </div>
 
-<h2>Completed Tasks</h2>
-<div id="completedTaskList">
-  <!-- Completed tasks will be added here -->
+<div class="taskContainer">
+  <div class="taskSection">
+    <h2>Tareas</h2>
+    <div id="taskList">
+      <!-- Las tareas serán añadidas aquí -->
+    </div>
+  </div>
+
+  <div class="taskSection">
+    <h2>Tareas Completadas</h2>
+    <div id="completedTaskList">
+      <!-- Las tareas completadas serán añadidas aquí -->
+    </div>
+  </div>
 </div>
 
 <script>
@@ -42,7 +74,7 @@ function addTask() {
   var taskInput = document.getElementById("taskInput");
   var taskText = taskInput.value;
   if (taskText === "") {
-    alert("Please enter a task!");
+    alert("¡Por favor ingrese una tarea!");
     return;
   }
 
@@ -67,9 +99,9 @@ function addTask() {
   taskTextElement.textContent = taskText;
 
   var deleteButton = document.createElement("button");
-  deleteButton.textContent = "Delete";
+  deleteButton.textContent = "Eliminar";
   deleteButton.onclick = function() {
-    taskList.removeChild(taskItem);
+    taskItem.parentNode.removeChild(taskItem);
   };
 
   taskItem.appendChild(checkbox);
