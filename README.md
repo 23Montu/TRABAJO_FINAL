@@ -23,7 +23,7 @@ Este es un sencillo gestor de tareas web que permite a los usuarios añadir, com
 
 ## Cómo Usar
 
-
+ <img src="images/Captura de pantalla 2024-05-21 003324.png" alt="" />
 ## Estructura del Proyecto
 
 ```plaintext
