@@ -74,19 +74,43 @@
   </div>
   <!-- end hero area -->
 
+  <!-- hero section -->
+  <section class="hero_section">
+    <div class="hero_detail">
+      <h1>
+        <span>Gestor de Tareas</span>
+      </h1>
 
+      <div>
+        <input type="text" id="taskInput" placeholder="Añadir nueva tarea">
+        <button onclick="addTask()">Añadir Tarea</button>
+      </div>
 
+      <div class="taskContainer">
+        <div class="taskSection">
+          <h2>Tareas</h2>
+          <div id="taskList">
+            <!-- Las tareas serán añadidas aquí -->
+          </div>
+        </div>
 
+        <div class="taskSection">
+          <h2>Tareas Completadas</h2>
+          <div id="completedTaskList">
+            <!-- Las tareas completadas serán añadidas aquí -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end hero section -->
 
   <!-- contact section -->
-
   <section class="contact_section layout_padding">
     <div class="container">
       <div class="col-md-6">
         <div class="d-flex mb-4 ml-4 ml-md-0">
-          <h2 class="custom_heading text-center">
-            CONTACT US
-          </h2>
+          <h2 class="custom_heading text-center">CONTACT US</h2>
         </div>
         <form action="">
           <div>
@@ -96,24 +120,19 @@
             <input type="email" placeholder="Email" />
           </div>
           <div>
-            <input type="text" placeholder="Pone Number" />
+            <input type="text" placeholder="Phone Number" />
           </div>
           <div>
             <input type="text" class="message-box" placeholder="Message" />
           </div>
           <div class="d-flex justify-content-center mt-4 ">
-            <button>
-              SEND
-            </button>
+            <button>SEND</button>
           </div>
         </form>
       </div>
     </div>
-
   </section>
-
   <!-- end contact section -->
-
 
   <!-- info section -->
   <section class="info_section layout_padding">
@@ -161,24 +180,11 @@
             </div>
           </div>
         </a>
-
       </div>
     </div>
   </section>
-
   <!-- end info_section -->
 
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
-      &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </section>
-  <!-- footer section -->
-
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-</body>
-
-</html>
