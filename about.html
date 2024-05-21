@@ -7,16 +7,35 @@
 <style>
   body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
   #taskInput {
     margin-bottom: 10px;
     width: 300px;
   }
   .taskItem {
+    display: flex;
+    align-items: center;
     margin-bottom: 5px;
   }
   .complete {
     text-decoration: line-through;
+  }
+  .taskContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .taskSection {
+    flex: 1;
+    margin: 0 20px;
+  }
+  .taskSection h2 {
+    text-align: center;
   }
 </style>
 </head>
@@ -24,17 +43,25 @@
 
 <h1>Task Manager</h1>
 
-<input type="text" id="taskInput" placeholder="Add new task">
-<button onclick="addTask()">Add Task</button>
-
-<h2>Tasks</h2>
-<div id="taskList">
-  <!-- Tasks will be added here -->
+<div>
+  <input type="text" id="taskInput" placeholder="Add new task">
+  <button onclick="addTask()">Add Task</button>
 </div>
 
-<h2>Completed Tasks</h2>
-<div id="completedTaskList">
-  <!-- Completed tasks will be added here -->
+<div class="taskContainer">
+  <div class="taskSection">
+    <h2>Tasks</h2>
+    <div id="taskList">
+      <!-- Tasks will be added here -->
+    </div>
+  </div>
+
+  <div class="taskSection">
+    <h2>Completed Tasks</h2>
+    <div id="completedTaskList">
+      <!-- Completed tasks will be added here -->
+    </div>
+  </div>
 </div>
 
 <script>
@@ -69,7 +96,7 @@ function addTask() {
   var deleteButton = document.createElement("button");
   deleteButton.textContent = "Delete";
   deleteButton.onclick = function() {
-    taskList.removeChild(taskItem);
+    taskItem.parentNode.removeChild(taskItem);
   };
 
   taskItem.appendChild(checkbox);
