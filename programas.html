@@ -15,7 +15,7 @@
         }
 
         .header {
-            background-color: #2e8b57; /* Color oscuro para la franja */
+            background-color: #333; /* Color oscuro para la franja */
             padding: 20px; /* Espacio interno */
             border-radius: 8px; /* Bordes redondeados */
             margin-bottom: 20px; /* Espacio debajo de la franja */
@@ -34,11 +34,45 @@
             font-style: italic; /* Estilo en cursiva */
         }
 
+        .franja-botones {
+            width: 100%;
+            background-color: #333;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px; /* Espacio debajo de la franja de botones */
+        }
+
+        .botones {
+            display: flex;
+            gap: 20px;
+        }
+
+        .botones button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .botones button:hover {
+            background-color: #555; /* Color de fondo del botón al pasar el mouse */
+        }
+
+        .botones a {
+            color: white;
+            text-decoration: none; /* Sin subrayado */
+        }
+
         .content {
             display: flex; /* Usar flexbox para alinear la imagen y el texto */
             align-items: center; /* Centrar verticalmente los elementos */
             justify-content: center; /* Centrar horizontalmente los elementos */
-            background-color: #ffffff; /* Fondo blanco para el texto */
+            background-color: #fff; /* Fondo blanco para el texto */
             padding: 20px; /* Espaciado interno */
             border-radius: 8px; /* Bordes redondeados */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en el cuadro de texto */
@@ -99,9 +133,19 @@
         <h2>Manos al ambiente</h2>
     </div>
     
+    <!-- Franja de botones -->
+    <div class="franja-botones">
+        <div class="botones">
+            <button><a href="index.html">Inicio</a></button>
+            <button><a href="proyecto.html">Proyecto</a></button>
+            <button><a href="programas.html">Programa</a></button>
+            <button><a href="propuestas.html">Propuestas</a></button>
+        </div>
+    </div>
+
     <!-- Primera sección -->
     <div class="content">
-        <img src="imagenes/arbol3.jpg" alt="Plantación de árboles" />
+        <img src="imagenes/arbol.jpg" alt="Plantación de árboles" />
         <p>
             El 16 de septiembre de 2024, un grupo de estudiantes de Ingeniería de Sistemas participó en una significativa
             actividad de plantación de árboles. Esta iniciativa no solo busca contribuir al medio ambiente, 

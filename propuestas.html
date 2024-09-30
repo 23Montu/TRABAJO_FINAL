@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programas que participaron</title>
+    <title>Propuestas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Agregar íconos -->
     <style>
         body {
@@ -32,6 +32,40 @@
             margin: 10px 0 0; /* Espacio entre el título y el eslogan */
             font-size: 1.5em; /* Tamaño del eslogan */
             font-style: italic; /* Estilo en cursiva */
+        }
+
+        .franja-botones {
+            width: 100%;
+            background-color: #333;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px; /* Espacio debajo de la franja de botones */
+        }
+
+        .botones {
+            display: flex;
+            gap: 20px;
+        }
+
+        .botones button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .botones button:hover {
+            background-color: #555; /* Color de fondo del botón al pasar el mouse */
+        }
+
+        .botones a {
+            color: white;
+            text-decoration: none; /* Sin subrayado */
         }
 
         .content {
@@ -95,10 +129,20 @@
 </head>
 <body>
     <div class="header">
-        <h1>Programas que participaron</h1>
+        <h1>Propuestas</h1>
         <h2>Manos al ambiente</h2>
     </div>
     
+    <!-- Franja de botones -->
+    <div class="franja-botones">
+        <div class="botones">
+            <button><a href="index.html">Inicio</a></button>
+            <button><a href="proyecto.html">Proyecto</a></button>
+            <button><a href="programas.html">Programa</a></button>
+            <button><a href="propuestas.html">Propuestas</a></button>
+        </div>
+    </div>
+
     <!-- Primera sección -->
     <div class="content">
         <img src="imagenes/arbol.jpg" alt="Plantación de árboles" />
@@ -147,14 +191,6 @@
             <li><i class="fas fa-users"></i> Más de 50 voluntarios participaron.</li>
             <li><i class="fas fa-clock"></i> 300 horas de trabajo comunitario acumuladas.</li>
         </ul>
-    </div>
-
-    <!-- Botones para Propuestas y Programa -->
-    <div class="franja-botones">
-        <div class="botones">
-            <a href="propuestas.html"><button>Propuestas</button></a>
-            <a href="programas.html"><button>Programa</button></a>
-        </div>
     </div>
 </body>
 </html>
