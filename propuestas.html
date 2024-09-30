@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programas que participaron</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Agregar íconos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #2e8b57; /* Color de fondo verde menta */
+            color: #333; /* Color del texto */
+        }
+
+        .header {
+            background-color: #333; /* Color oscuro para la franja */
+            padding: 20px; /* Espacio interno */
+            border-radius: 8px; /* Bordes redondeados */
+            margin-bottom: 20px; /* Espacio debajo de la franja */
+            color: white; /* Color del texto en la franja */
+        }
+
+        h1 {
+            margin: 0; /* Quitar margen superior e inferior */
+            font-size: 2.5em; /* Tamaño del título */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra sutil en el título */
+        }
+
+        h2 {
+            margin: 10px 0 0; /* Espacio entre el título y el eslogan */
+            font-size: 1.5em; /* Tamaño del eslogan */
+            font-style: italic; /* Estilo en cursiva */
+        }
+
+        .content {
+            display: flex; /* Usar flexbox para alinear la imagen y el texto */
+            align-items: center; /* Centrar verticalmente los elementos */
+            justify-content: center; /* Centrar horizontalmente los elementos */
+            background-color: #fff; /* Fondo blanco para el texto */
+            padding: 20px; /* Espaciado interno */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en el cuadro de texto */
+            margin-bottom: 60px; /* Espacio entre secciones (incrementado para más espacio) */
+            text-align: left; /* Alinear texto a la izquierda */
+        }
+
+        img {
+            max-width: 40%; /* Ajustar ancho de la imagen */
+            height: auto;
+            border-radius: 8px; /* Bordes redondeados en la imagen */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en la imagen */
+            margin: 20px; /* Espacio arriba y abajo de la imagen */
+        }
+
+        /* Clase para invertir el orden en la segunda sección */
+        .content-reverse {
+            flex-direction: row-reverse; /* Invertir el orden de los elementos */
+        }
+
+        p {
+            font-size: 1.2em; /* Tamaño del texto */
+            line-height: 1.6; /* Espaciado entre líneas */
+            max-width: 600px; /* Ancho máximo del texto */
+            margin: 0; /* Quitar margen superior e inferior */
+            text-align: justify; /* Justificar el texto */
+        }
+
+        /* Nueva sección de estadísticas */
+        .statistics {
+            background-color: #333; /* Fondo oscuro */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            color: white; /* Cambiar el color del texto a blanco */
+        }
+
+        .statistics h3 {
+            margin-top: 0; /* Quitar margen superior */
+            font-size: 1.5em; /* Tamaño del título */
+        }
+
+        .statistics ul {
+            list-style-type: none; /* Quitar viñetas */
+            padding: 0; /* Quitar padding */
+        }
+
+        .statistics li {
+            margin: 10px 0; /* Espacio entre elementos */
+            font-size: 1.1em; /* Tamaño del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Programas que participaron</h1>
+        <h2>Manos al ambiente</h2>
+    </div>
+    
+    <!-- Primera sección -->
+    <div class="content">
+        <img src="imagenes/arbol.jpg" alt="Plantación de árboles" />
+        <p>
+            El 16 de septiembre de 2024, un grupo de estudiantes de Ingeniería de Sistemas participó en una significativa
+            actividad de plantación de árboles. Esta iniciativa no solo busca contribuir al medio ambiente, 
+            sino también fomentar la responsabilidad social entre los futuros profesionales. 
+            Al plantar árboles, estamos asegurando un futuro más sostenible y mostrando el compromiso de nuestra 
+            carrera hacia un mundo mejor.
+        </p>
+    </div>
+
+    <!-- Segunda sección -->
+    <div class="content content-reverse">
+        <p>
+            La actividad de plantación de árboles no solo es un ejercicio práctico, sino también una lección de vida. 
+            Aprendimos sobre la importancia de cuidar nuestro planeta y la relevancia de cada árbol en la biodiversidad. 
+            La experiencia nos motivó a ser agentes de cambio en nuestras comunidades.
+        </p>
+        <img src="imagenes/arbol2.jpg" alt="Plantación de árboles" />
+    </div>
+
+    <!-- Tercera sección -->
+    <div class="content">
+        <img src="imagenes/arbol3.jpg" alt="Plantación de árboles" />
+        <p>
+            A través de esta actividad, nos comprometimos a seguir promoviendo el cuidado del medio ambiente. 
+            La plantación de árboles es solo el comienzo; planeamos llevar a cabo más iniciativas que generen un impacto positivo 
+            y ayuden a preservar nuestro entorno natural para las futuras generaciones.
+        </p>
+    </div>
+
+    <!-- Cuarta sección (espacio para más imágenes) -->
+    <div class="content">
+        <img src="imagenes/arbol4.jpg" alt="Plantación de árboles" />
+        <p>
+            El compromiso con el medio ambiente debe ser continuo. Cada pequeño esfuerzo cuenta, y juntos podemos lograr un cambio significativo.
+        </p>
+    </div>
+
+    <!-- Nueva sección de estadísticas -->
+    <div class="statistics">
+        <h3>Estadísticas de la Plantación de Árboles</h3>
+        <ul>
+            <li><i class="fas fa-tree"></i> 100 árboles plantados en el último evento.</li>
+            <li><i class="fas fa-users"></i> Más de 50 voluntarios participaron.</li>
+            <li><i class="fas fa-clock"></i> 300 horas de trabajo comunitario acumuladas.</li>
+        </ul>
+    </div>
+</body>
+</html>
