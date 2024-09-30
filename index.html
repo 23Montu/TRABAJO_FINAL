@@ -17,7 +17,7 @@
         .franja {
             width: 100%; /* Ocupa el ancho completo de la página */
             height: 200px; /* Ajusta la altura según necesites */
-            background-color: #a8d6bb; /* Color verde claro */
+            background-color: #a8d5ba; /* Color verde claro */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -92,6 +92,73 @@
         .imagenes .imagen-pequena img {
             width: 400px; /* Aumenta el tamaño según sea necesario */
         }
+    
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f7f2;
+            color: #2f4f2f;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        section {
+            margin: 2rem;
+            padding: 1.5rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #388e3c;
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 0.5rem;
+            font-size: 1.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.8rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '🌿';
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4caf50;
+            color: white;
+            margin-top: 2rem;
+        }
+    
     </style>
 </head>
 <body>
@@ -104,8 +171,7 @@
     <div class="franja-botones">
         <div class="botones">
             <button>Inicio</button>
-            <button>Proyectos</button>
-            <button>Foro</button>
+            <button><a href="proyecto.html">Proyecto</a></button>
             <button>Programa</button>
             <button>Propuestas</button>
         </div>
@@ -125,5 +191,46 @@
             </button>
         </div>
     </div>
+    <title>Ética y Profesión en la Siembra de Árboles</title>
+    
+</head>
+
+<body>
+    <header>
+        <h1>Ética y Profesión en la Siembra de Árboles</h1>
+    </header>
+
+    <section>
+        <h2>Introducción a la Ética Profesional en la Siembra de Árboles</h2>
+        <p>La siembra de árboles es crucial para la sostenibilidad ambiental y la conservación de la biodiversidad para los estudiantes de la Universidad Mariana, comprender la ética profesional en esta práctica es fundamental.
+        </p>
+        <p>
+        La ética guía la toma de decisiones responsables que afectan tanto a las comunidades como a los ecosistemas, los futuros profesionales deben ser conscientes de su impacto ambiental y adoptar prácticas sostenibles, eligiendo especies adecuadas y respetando a las comunidades locales.
+        </p>
+        <p>
+        Integrar la ética en su formación permitirá a los estudiantes contribuir a un futuro más saludable y sostenible, abordando los desafíos ambientales con responsabilidad y compromiso.
+    </p>
+    </section>
+
+    <section>
+        <h2>Principios Éticos</h2>
+        <img src="imagenes/arbol.jpeg" alt="Arbol" width= "300" height="200" style="float:right; margin-left:0cap;margin-right: 3rcap;">
+        <ul>
+            <li><strong>Responsabilidad Ambiental:</strong> Asumir el compromiso de proteger y restaurar los ecosistemas mediante la siembra de árboles.</li>
+            <li><strong>Transparencia:</strong> Informar claramente a las comunidades sobre los beneficios y objetivos de los proyectos de reforestación.</li>
+            <li><strong>Participación Comunitaria:</strong> Involucrar a las comunidades locales en el proceso de siembra, respetando sus necesidades y conocimientos.</li>
+            <li><strong>Preservación de la Biodiversidad:</strong> Elegir especies nativas y adecuadas que beneficien el ecosistema local.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <p><strong>Docente a cargo:</strong> Luis Francisco Melo Rosero.</p>
+        <p>📞 +573196900274        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ética y Profesión en la Siembra de Árboles</p>
+    </footer>
 </body>
 </html>
